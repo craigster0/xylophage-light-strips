@@ -65,7 +65,7 @@ addToPixelColor(
  *
  */
 uint32_t     cat_color_scheme[][3] = {
-    { NeoPixelColor(0, 128, 0), NeoPixelColor(0, 128, 0), NeoPixelColor(0, 128, 0) }
+    { NeoPixelColor(0, 128, 0), NeoPixelColor(0, 128, 0), NeoPixelColor(0, 128, 0) },
     { NeoPixelColor(128, 0, 0), NeoPixelColor(128, 0, 0), NeoPixelColor(128, 0, 0) }
 };
 
@@ -133,7 +133,7 @@ public:
         }
 
         // draw the new position
-        draw(0);
+        draw();
     }
 
     // Update the catepillar (change position, length, color, etc.)
